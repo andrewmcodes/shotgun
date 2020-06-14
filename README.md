@@ -1,6 +1,13 @@
-# Medals
+# Rails Shotgun
 
-Ruby on Rails application initialized with [Hix on Rails][hixonrails].
+Ruby on Rails application initialized with all the good stuff.
+
+
+## Why is it named Shotgun??
+
+> Shotgunning a beer is the simple act of consuming a beer at a high rate of speed.
+
+The inspiration came from one of my common college activities. Rails Shotgun lets you be as productive as shotgunning a beer is at getting you drunk.
 
 ## System dependencies
 
@@ -60,7 +67,6 @@ $ bundle exec rails_best_practices
 $ bundle audit
 ```
 
-[hixonrails]: https://hixonrails.com
 [brakeman]: https://github.com/presidentbeef/brakeman
 [fasterer]: https://github.com/DamirSvrtan/fasterer
 [rails-best-practices]: https://github.com/flyerhzm/rails_best_practices
