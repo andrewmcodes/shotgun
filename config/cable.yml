@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch('REDIS_URL') %>/<%= ENV.fetch('REDIS_DB') %>
-  channel_prefix: medals_production
+  channel_prefix: CHANGEME_production

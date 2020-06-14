@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
-  config.session_store :cache_store, key: "_medals_development_session"
+  config.session_store :cache_store, key: "_CHANGEME_development_session"
   config.cache_classes = false
   config.eager_load = false
   config.consider_all_requests_local = true

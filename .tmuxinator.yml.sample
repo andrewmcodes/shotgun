@@ -1,6 +1,6 @@
 # SEE: https://github.com/tmuxinator/tmuxinator
-name: medals
-root: ~/work/personal/rails/medals
+name: example
+root: ~/rails/example
 
 on_project_start: lsof -t -i tcp:3000 | xargs kill -KILL; lsof -t -i tcp:3035 | xargs kill -KILL;
 

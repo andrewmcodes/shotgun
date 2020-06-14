@@ -16,7 +16,7 @@ Rails.application.configure do
   config.log_level = :debug
   config.log_tags = [:request_id]
   config.cache_store = :redis_cache_store, {url: ENV["REDIS_URL"]}
-  config.session_store :cache_store, key: "_medals_production_session"
+  config.session_store :cache_store, key: "_CHANGEME_production_session"
   config.i18n.fallbacks = true
   config.active_support.deprecation = :notify
   config.log_formatter = ::Logger::Formatter.new

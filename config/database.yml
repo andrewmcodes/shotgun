@@ -6,15 +6,16 @@ default: &default
   password: <%= ENV['DB_PASSWORD'] %>
   host: <%= ENV['DB_HOST'] %>
   port: <%= ENV['DB_PORT'] %>
+  database: <%= "CHANGEME_#{ENV['RAILS_ENV']}" %>
 
 development:
   <<: *default
-  database: medals_development
+  # database: CHANGEME_development
 
 test:
   <<: *default
-  database: medals_test
+  # database: CHANGEME_test
 
 production:
   <<: *default
-  database: medals_production
+  # database: CHANGEME_production
