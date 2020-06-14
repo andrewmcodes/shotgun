@@ -5,7 +5,8 @@
   "scripts": {
     "prettier:check": "prettier-standard -- --check \"**/*.js\" \"app/**/*.css\"",
     "prettier:format": "prettier-standard -- \"**/*.js\" \"app/**/*.css\"",
-    "prettier:lint": "prettier-standard -- --lint \"**/*.js\" \"app/**/*.css\""
+    "prettier:lint": "prettier-standard -- --lint \"**/*.js\" \"app/**/*.css\"",
+    "release": "standard-version"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "prettier-standard": "^16.3.0",
+    "standard-version": "^8.0.0",
     "webpack-bundle-analyzer": "^3.8.0",
     "webpack-dev-server": "^3.11.0"
   }
