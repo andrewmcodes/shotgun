@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "== Formatting with StandardRb =="
+bundle exec standardrb --fix --format progress
+echo "== Formatting with ERB Lint =="
+bundle exec erblint --config .erb-lint.yml --autocorrect app/views/**/*.html.erb app/components/**/*.html.erb
+echo "== Formatting with Prettier-Standard =="
+yarn run prettier:format

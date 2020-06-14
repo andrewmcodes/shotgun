@@ -1,0 +1,15 @@
+# SEE: https://github.com/tmuxinator/tmuxinator
+name: medals
+root: ~/work/personal/rails/medals
+
+on_project_start: lsof -t -i tcp:3000 | xargs kill -KILL; lsof -t -i tcp:3035 | xargs kill -KILL;
+
+windows:
+  - shell: nvm use && code .
+  - server:
+      layout: 3c9e,117x81,0,0[117x58,0,0,2,117x22,0,59{84x22,0,59,3,32x22,85,59,4}]
+      panes:
+        - nvm use && bundle exec rails s
+        - nvm use && bin/webpack-dev-server
+        - nvm use && redis-cli flushall && bundle exec sidekiq -C config/sidekiq.yml
+  - console: bundle exec rails c

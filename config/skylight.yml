@@ -1,0 +1,15 @@
+---
+authentication: <%= ENV['SKYLIGHT_AUTHENTICATION'] %>
+# ignored_endpoints:
+#   - HeartbeatController#status
+#   - StatusWorker
+# log_file: log/skylight.log
+# daemon.sockdir_path: /var/run/myapp
+# deploy:
+#   # Set an id and/or a sha. If no id is provided, the sha will be used.
+#   id:
+#   git_sha:
+#   description:
+# staging:                      # Rails environment
+#   env:                        # Skylight environment
+#   log_file: twig/skylight.log # overrides log/skylight.log

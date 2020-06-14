@@ -1,0 +1,26 @@
+{
+  "name": "medals",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prettier:check": "prettier-standard -- --check \"**/*.js\" \"app/**/*.css\"",
+    "prettier:format": "prettier-standard -- \"**/*.js\" \"app/**/*.css\"",
+    "prettier:lint": "prettier-standard -- --lint \"**/*.js\" \"app/**/*.css\""
+  },
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.2.2",
+    "@tailwindcss/ui": "^0.3.0",
+    "stimulus": "^1.1.1",
+    "stimulus_reflex": "^3.2.2-pre0",
+    "tailwindcss": "^1.4.6",
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.3.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medals</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= action_cable_meta_tag %>
+    <%= stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload", defer: true %>
+  </head>
+  <body>
+    <% flash.each do |msg_type, message| %>
+      <div class="alert <%= bootstrap_class_for(msg_type) %>">
+        <div class="container">
+          <button class="close" data-dismiss="alert"><span>×</span></button>
+          <%= message %>
+        </div>
+      </div>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>

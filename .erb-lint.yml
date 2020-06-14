@@ -1,0 +1,10 @@
+---
+# https://github.com/Shopify/erb-lint#linters
+
+glob: "**/*.html{+*,}.erb"
+EnableDefaultLinters: true
+linters:
+  ErbSafety:
+    enabled: false
+  Rubocop:
+    enabled: false
