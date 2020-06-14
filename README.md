@@ -1,10 +1,12 @@
 ![Base Branch](https://img.shields.io/badge/base%20branch-trunk-important)
 ![GitHub License](https://img.shields.io/github/license/andrewmcodes/shotgun)
 ![OSS Lifecycle](https://img.shields.io/osslifecycle/andrewmcodes/shotgun)
+![Last Commit To Trunk](https://img.shields.io/github/last-commit/andrewmcodes/shotgun/trunk)
+![Last Commit](https://img.shields.io/github/last-commit/andrewmcodes/shotgun)
 
 # WIP: Rails Shotgun
 
-Ruby on Rails application initialized with all the good stuff.
+Ruby on Rails application initialized with all the good stuff. Use at your own risk or we welcome pull requests. I will be working on a roadmap soon.
 
 ## Why is it named Shotgun??
 
@@ -32,8 +34,8 @@ Copy an existing sample environment file. Run:
 $ cp .env.sample .env
 ```
 
-and edit newly created `.env` file. You will also need to change the app name (for now). Grep the codebase for `CHANGEME` or use this list:
-
+and edit newly created `.env` file. The minimum you are going to need are
+credentials to your local PostgreSQL database.
 
 Then, install all the necessary gems:
 ```bash
