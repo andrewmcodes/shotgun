@@ -26,8 +26,18 @@ Dotenv::Railtie.load
 
 module CHANGEME
   class Application < Rails::Application
-    config.active_record.observers = %i[]
     config.load_defaults(6.0)
+
+    # Enable active record observers.
+    # https://github.com/rails/rails-observers#active-record-observer
+    config.active_record.observers = %i[]
+
+    # Use sidekiq for background job processing
+    # https://github.com/mperham/sidekiq/wiki/Active-Job#active-job-setup
+    config.active_job.queue_adapter = :sidekiq
+
+    # Alter what generators are used when using rails generate/scaffold
+    # See: https://guides.rubyonrails.org/configuring.html#configuring-generators
     config.generators do |g|
       g.assets false
       g.stylesheets false
