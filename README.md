@@ -26,9 +26,29 @@ Please take note that we are using `main` as the base branch.
 - Database: PostgreSQL
 - Redis installed
 
+### Rename Application
+
+You will want to rename the application first. Here are some options:
+
+- Watch the [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour)
+- Use [this RailsByte](https://railsbytes.com/public/templates/Xg8sNz)
+- Find and replace `CHANGEME` throughout. Note that if you take this method, you need to be aware of using the correct case.
+
 ### Configuration
 
+Make sure the app has been renamed before doing these steps.
+
+#### Automated
+
+```bash
+bin/setup
+```
+
+#### Manually
+
+```
 Copy an existing sample environment file. Run:
+
 ```bash
 $ cp .env.sample .env
 ```
@@ -36,16 +56,17 @@ $ cp .env.sample .env
 and edit newly created `.env` file. The minimum you are going to need are
 credentials to your local PostgreSQL database.
 
-Then, install all the necessary gems:
+Then, install all the necessary dependencies:
+
 ```bash
-bundle install
+bundle install && yarn install
 ```
 
 ### Database creation
 
 In order to create the database with all the necessary seed data, run:
 ```bash
-$ rails db:create db:schema:load db:seed
+rails db:create db:schema:load db:seed
 ```
 
 ### How to start the app
@@ -54,7 +75,14 @@ Start the Ruby on Rails server with:
 ```bash
 rails server
 ```
-To run Sidekiq, launch another process with:
+
+We __highly__ recommend running the weback dev server in another tab instead of inline compilation that will occur if you don't for speed.
+
+```bash
+bin/webpack-dev-server
+```
+
+To _optionally_ run Sidekiq, launch another process with:
 ```bash
 bundle exec sidekiq
 ```

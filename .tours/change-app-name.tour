@@ -1,0 +1,113 @@
+{
+  "title": "Change App Name",
+  "steps": [
+    {
+      "file": "package.json",
+      "line": 2,
+      "description": "You will need to replace this with the name of your app. \n\nEx: `shotgun`.\n\nNote that the name needs to be lowercased. ",
+      "selection": {
+        "start": {
+          "line": 2,
+          "character": 12
+        },
+        "end": {
+          "line": 2,
+          "character": 20
+        }
+      }
+    },
+    {
+      "file": "app/views/layouts/application.html.erb",
+      "line": 4,
+      "description": "Set this to the name of your application or whatever else you may want.\n\nEx: `Shotgun | A Rails Template`",
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 12
+        },
+        "end": {
+          "line": 4,
+          "character": 20
+        }
+      }
+    },
+    {
+      "file": "config/application.rb",
+      "line": 27,
+      "description": "Change this to the name of your application, in Pascal case.\n\nEx: `ShotgunApp`.",
+      "selection": {
+        "start": {
+          "line": 27,
+          "character": 8
+        },
+        "end": {
+          "line": 27,
+          "character": 16
+        }
+      }
+    },
+    {
+      "file": "config/cable.yml",
+      "line": 10,
+      "description": "Change this to the name of your app.\n\nEx: `shotgun_development`.\n\nNote that the convention is to use snake case."
+    },
+    {
+      "file": "config/database.yml",
+      "line": 12,
+      "description": "Change this to the name of your app.\n\nEx: `shotgun_development`.\n\nNote that the convention is to use snake case.",
+      "selection": {
+        "start": {
+          "line": 12,
+          "character": 13
+        },
+        "end": {
+          "line": 12,
+          "character": 21
+        }
+      }
+    },
+    {
+      "file": "config/database.yml",
+      "line": 16,
+      "description": "Change this to the name of your app.\n\nEx: `shotgun_test`.\n\nNote that the convention is to use snake case."
+    },
+    {
+      "file": "config/database.yml",
+      "line": 20,
+      "description": "Change this to the name of your app.\n\nEx: `shotgun_production`.\n\nNote that the convention is to use snake case."
+    },
+    {
+      "file": "config/environments/development.rb",
+      "line": 4,
+      "description": "Change this to the name of your app.\n\nEx: `_shotgun_development_session`.\n\nNote that the convention is to use snake case.",
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 44
+        },
+        "end": {
+          "line": 4,
+          "character": 73
+        }
+      }
+    },
+    {
+      "file": "config/environments/production.rb",
+      "line": 19,
+      "description": "Change this to the name of your app.\n\nEx: `_shotgun_development_session`.\n\nNote that the convention is to use snake case.",
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 45
+        },
+        "end": {
+          "line": 19,
+          "character": 53
+        }
+      }
+    }
+  ],
+  "ref": "main",
+  "isPrimary": true,
+  "description": "A quick walkthrough of where you need to change the code for your own app. You could also accomplish this with the `rename` gem."
+}
