@@ -1,8 +1,7 @@
-![Base Branch](https://img.shields.io/badge/base%20branch-trunk-important)
+![Base Branch](https://img.shields.io/badge/base%20branch-main-important)
 ![GitHub License](https://img.shields.io/github/license/andrewmcodes/shotgun)
-![OSS Lifecycle](https://img.shields.io/osslifecycle/andrewmcodes/shotgun)
-![Last Commit To Trunk](https://img.shields.io/github/last-commit/andrewmcodes/shotgun/trunk)
-![Last Commit](https://img.shields.io/github/last-commit/andrewmcodes/shotgun)
+![GitHub issues](https://img.shields.io/github/issues/andrewmcodes/shotgun)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
 # WIP: Rails Shotgun
 
@@ -16,9 +15,9 @@ The inspiration came from one of my common college activities. Rails Shotgun let
 
 ## Setup
 
-Please take note that we are using `trunk` as the base branch.
+Please take note that we are using `main` as the base branch.
 
-![Base Branch](https://img.shields.io/badge/base%20branch-trunk-important)
+![Base Branch](https://img.shields.io/badge/base%20branch-main-important)
 
 ### System dependencies
 
