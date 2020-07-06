@@ -16,9 +16,9 @@ FileUtils.chdir APP_ROOT do
   puts "\n== Installing JavaScript dependencies =="
   system("bundle check") || system!("bundle install")
 
-  puts "\n== Copying setup files =="
-  FileUtils.cp ".tmuxinator.yml.setup", ".tmuxinator.yml" unless File.exist?(".tmuxinator.yml")
-  FileUtils.cp ".env.setup", ".env" unless File.exist?(".env")
+  puts "\n== Copying sample files =="
+  FileUtils.cp ".tmuxinator.yml.sample", ".tmuxinator.yml" unless File.exist?(".tmuxinator.yml")
+  FileUtils.cp ".env.sample", ".env" unless File.exist?(".env")
 
   puts "\n== Preparing database =="
   system! "bin/rails db:create db:migrate db:seed"
