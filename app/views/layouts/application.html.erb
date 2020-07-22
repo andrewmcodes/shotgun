@@ -9,14 +9,9 @@
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload", defer: true %>
   </head>
   <body>
-    <% flash.each do |msg_type, message| %>
-      <div class="alert <%= bootstrap_class_for(msg_type) %>">
-        <div class="container">
-          <button class="close" data-dismiss="alert"><span>×</span></button>
-          <%= message %>
-        </div>
-      </div>
-    <% end %>
-    <%= yield %>
+    <%= render FlashComponent.new(flash: flash) %>
+    <main class="container p-4 mx-auto">
+      <%= yield %>
+    </main>
   </body>
 </html>

@@ -27,7 +27,7 @@ gem "skylight", "~> 4.3"
 gem "stimulus_reflex", "~> 3.2"
 gem "turbolinks", "~> 5.2"
 gem "view_component", "~> 2.7"
-gem "webpacker", "~> 4.0"
+gem "webpacker", "~> 5.1.1"
 
 group :development, :test do
   gem "fasterer", "~> 0.8.3"
@@ -39,7 +39,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "better_errors", "~> 2.7"
   gem "binding_of_caller", "~> 0.8.0"
   gem "brakeman", "~> 4.8"
   gem "erb_lint", "~> 0.0.33"
