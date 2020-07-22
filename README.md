@@ -1,6 +1,6 @@
 ![Base Branch](https://img.shields.io/badge/base%20branch-main-important)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 ![GitHub License](https://img.shields.io/github/license/andrewmcodes/shotgun)
 ![GitHub issues](https://img.shields.io/github/issues/andrewmcodes/shotgun)
@@ -147,6 +147,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.andrewm.codes"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/andrewmcodes/shotgun/commits?author=andrewmcodes" title="Code">💻</a> <a href="#ideas-andrewmcodes" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-andrewmcodes" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-andrewmcodes" title="Maintenance">🚧</a> <a href="https://github.com/andrewmcodes/shotgun/pulls?q=is%3Apr+reviewed-by%3Aandrewmcodes" title="Reviewed Pull Requests">👀</a> <a href="#question-andrewmcodes" title="Answering Questions">💬</a></td>
+    <td align="center"><a href="https://github.com/cjilbert504"><img src="https://avatars3.githubusercontent.com/u/54157657?v=4" width="100px;" alt=""/><br /><sub><b>cjilbert504</b></sub></a><br /><a href="https://github.com/andrewmcodes/shotgun/commits?author=cjilbert504" title="Code">💻</a> <a href="https://github.com/andrewmcodes/shotgun/issues?q=author%3Acjilbert504" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
