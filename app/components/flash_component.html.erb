@@ -1,0 +1,6 @@
+<!-- TODO: Refactor with slots -->
+
+<% flash.each do |msg_type, message| %>
+  <%= next unless msg_type && message %>
+  <%= render(AlertComponent.new(variant: msg_type, message: message)) %>
+<% end %>
