@@ -14,7 +14,7 @@ FileUtils.chdir APP_ROOT do
   system("bundle check") || system!("bundle install")
 
   puts "\n== Installing JavaScript dependencies =="
-  system("bundle check") || system!("bundle install")
+  system("yarn check") || system!("yarn install")
 
   puts "\n== Copying sample files =="
   FileUtils.cp ".tmuxinator.yml.sample", ".tmuxinator.yml" unless File.exist?(".tmuxinator.yml")
