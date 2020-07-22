@@ -4,5 +4,8 @@ module.exports = {
     extend: {}
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/custom-forms')
+  ]
 }
