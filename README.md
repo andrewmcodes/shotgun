@@ -112,6 +112,19 @@ $ bundle audit
 [rails-best-practices]: https://github.com/flyerhzm/rails_best_practices
 [bundler-audit]: https://github.com/rubysec/bundler-audit
 
+### Removed Gems
+
+- [redis-namespace](https://github.com/resque/redis-namespace)
+  - Not needed and it was throwing a bunch of warnings.
+- [active-record-observer](https://github.com/rails/rails-observers#active-record-observer)
+  - Unused
+- [activeresource](https://github.com/rails/activeresource)
+  - Unused
+- [ngrok-tunnel](https://github.com/bogdanovich/ngrok-tunnel)
+  - Not needed if using tmuxinator
+- [better_errors](https://github.com/BetterErrors/better_errors)
+  - Not really needed anymore now that Rails has made some improvements that made this a real nice-to-have
+
 ### Changelog
 
 Coming Soon
@@ -119,8 +132,7 @@ Coming Soon
 
 ### Contributing
 
-Coming Soon
-<!-- [Contributing Guide][contributing] -->
+[Contributing Guide][contributing]
 
 ### Code of Conduct
 

@@ -36,38 +36,3 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
-
-# See https://dev.to/sabatesduran/ngrok-for-rails-development-5f9k
-if ENV["RAILS_ENV"] == "development" && ENV["NGROK_SUBDOMAIN"].present?
-  begin
-    options = {
-      addr: ENV.fetch("PORT") { 3000 },
-      config: File.join(ENV["HOME"], ".ngrok2", "ngrok.yml"),
-      subdomain: ENV["NGROK_SUBDOMAIN"],
-      region: "us"
-    }
-
-    Ngrok::Tunnel.start(options)
-    box = TTY::Box.frame(
-      width: 50,
-      height: 10,
-      padding: 2,
-      title: {top_left: "<NGROK>", bottom_right: "</NGROK>"},
-      style: {fg: :green, bg: :black, border: {fg: :green, bg: :black}}
-    ) {
-      "STATUS:  #{Ngrok::Tunnel.status}\nPORT:    #{Ngrok::Tunnel.port}\nHTTP:    #{Ngrok::Tunnel.ngrok_url}\nHTTPS:   #{Ngrok::Tunnel.ngrok_url_https}\nINSPECT: http://127.0.0.1:4040"
-    }
-  rescue
-    box = TTY::Box.frame(
-      width: 50,
-      height: 5,
-      align: :center,
-      padding: 1,
-      title: {top_left: "<NGROK>", bottom_right: "</NGROK>"},
-      style: {fg: :red, bg: :black, border: {fg: :red, bg: :black}}
-    ) {
-      "Tunnel could not be created, check your ngrok subdomain."
-    }
-  end
-  puts "\n#{box}\n"
-end

@@ -13,3 +13,4 @@ windows:
         - nvm use && bin/webpack-dev-server
         - nvm use && redis-cli flushall && bundle exec sidekiq -C config/sidekiq.yml
   - console: bundle exec rails c
+# - ngrok:  ngrok http 3000
