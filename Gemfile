@@ -17,12 +17,11 @@ gem "pg", "~> 1.2"
 gem "puma", "~> 4.3"
 gem "rails-observers", "~> 0.1.5"
 gem "rails", "~> 6.0"
-gem "redis-namespace", "~> 1.7"
 gem "redis-rails", "~> 5.0"
 gem "redis", "~> 4.1"
 gem "sass-rails", "~> 6.0"
 gem "sentry-raven", "~> 3.0"
-gem "sidekiq", "~> 6.0"
+gem "sidekiq", "~> 6.1"
 gem "skylight", "~> 4.3"
 gem "stimulus_reflex", "~> 3.2"
 gem "turbolinks", "~> 5.2"
@@ -39,11 +38,12 @@ group :development, :test do
 end
 
 group :development do
+  gem "annotate", "~> 3.1.1"
   gem "binding_of_caller", "~> 0.8.0"
   gem "brakeman", "~> 4.8"
   gem "erb_lint", "~> 0.0.33"
   gem "letter_opener", "~> 1.7"
-  gem "listen", "~> 3.1", "< 3.2"
+  gem "listen", "~> 3.1"
   gem "model_probe", "~> 1.0"
   gem "ngrok-tunnel"
   gem "standard", "~> 0.4.6"
@@ -53,7 +53,3 @@ group :development do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-group :development do
-  gem "annotate"
-end
