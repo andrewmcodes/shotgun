@@ -24,8 +24,8 @@ Please take note that we are using `main` as the base branch.
 
 ### System dependencies
 
-- Ruby version: 2.6.6
-- Rails version: 6.0.3.1
+- Ruby version: 2.7.1
+- Rails version: 6.0.3.2
 - Database: PostgreSQL
 - Redis installed
 
@@ -34,7 +34,6 @@ Please take note that we are using `main` as the base branch.
 You will want to rename the application first. Here are some options:
 
 - Watch the [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour)
-- Use [this RailsByte](https://railsbytes.com/public/templates/Xg8sNz)
 - Find and replace `CHANGEME` throughout. Note that if you take this method, you need to be aware of using the correct case.
 
 ### Configuration
@@ -113,6 +112,19 @@ $ bundle audit
 [rails-best-practices]: https://github.com/flyerhzm/rails_best_practices
 [bundler-audit]: https://github.com/rubysec/bundler-audit
 
+### Removed Gems
+
+- [redis-namespace](https://github.com/resque/redis-namespace)
+  - Not needed and it was throwing a bunch of warnings.
+- [active-record-observer](https://github.com/rails/rails-observers#active-record-observer)
+  - Unused
+- [activeresource](https://github.com/rails/activeresource)
+  - Unused
+- [ngrok-tunnel](https://github.com/bogdanovich/ngrok-tunnel)
+  - Not needed if using tmuxinator
+- [better_errors](https://github.com/BetterErrors/better_errors)
+  - Not really needed anymore now that Rails has made some improvements that made this a real nice-to-have
+
 ### Changelog
 
 Coming Soon
@@ -120,8 +132,7 @@ Coming Soon
 
 ### Contributing
 
-Coming Soon
-<!-- [Contributing Guide][contributing] -->
+[Contributing Guide][contributing]
 
 ### Code of Conduct
 

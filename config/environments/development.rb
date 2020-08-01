@@ -26,4 +26,7 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
   config.action_view.raise_on_missing_translations = true
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Allow accessing localhost on any domain in development. Important for testing multi-tenant apps
+  config.hosts = nil
 end

@@ -30,7 +30,9 @@ module CHANGEME
 
     # Enable active record observers.
     # https://github.com/rails/rails-observers#active-record-observer
-    config.active_record.observers = %i[]
+    # 1. Add gem "rails-observers", "~> 0.1.5"
+    # 2. Uncomment the line below
+    # config.active_record.observers = %i[]
 
     # Use sidekiq for background job processing
     # https://github.com/mperham/sidekiq/wiki/Active-Job#active-job-setup
