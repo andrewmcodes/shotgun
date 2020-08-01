@@ -18,7 +18,7 @@ gem "rails", "~> 6.0"
 gem "redis-rails", "~> 5.0"
 gem "redis", "~> 4.1"
 gem "sass-rails", "~> 6.0"
-# Preconfigured: Uncomment to activate and uncomment ApplicationController#set_raven_context
+# Preconfigured: Uncomment ApplicationController#set_raven_context & sentry initializer to activate
 # gem "sentry-raven", "~> 3.0"
 gem "sidekiq", "~> 6.1"
 # Preconfigured: Uncomment to activate
