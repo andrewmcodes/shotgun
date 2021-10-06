@@ -20,7 +20,7 @@ gem "redis", "~> 4.1"
 gem "sass-rails", "~> 6.0"
 # Preconfigured: Uncomment ApplicationController#set_raven_context & sentry initializer to activate
 # gem "sentry-raven", "~> 3.0"
-gem "sidekiq", "~> 6.1"
+gem "sidekiq", "~> 6.2"
 # Preconfigured: Uncomment to activate
 # gem "skylight", "~> 4.3"
 gem "stimulus_reflex", "~> 3.2"
